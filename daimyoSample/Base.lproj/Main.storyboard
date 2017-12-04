@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="uEA-ZW-FFn">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Page View Controller-->
+        <scene sceneID="mLN-9w-wdt">
+            <objects>
+                <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="n1D-TW-ydD" customClass="PageViewController" customModule="daimyoSample" customModuleProvider="target" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="HsV-z5-YHL">
+                        <nil key="title"/>
+                        <barButtonItem key="leftBarButtonItem" style="plain" id="jI4-4W-1VG">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="RJb-dM-3wR">
+                                <rect key="frame" x="16" y="7" width="73" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="SpeedTest"/>
+                                <connections>
+                                    <action selector="onSpeedTest:" destination="n1D-TW-ydD" eventType="touchUpInside" id="WSJ-bp-qB8"/>
+                                </connections>
+                            </button>
+                        </barButtonItem>
+                        <button key="titleView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="79B-C2-YDI">
+                            <rect key="frame" x="149.5" y="7" width="76" height="30"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <state key="normal" title="DashBoard"/>
+                            <connections>
+                                <action selector="onDashBoard:" destination="n1D-TW-ydD" eventType="touchUpInside" id="EjS-bY-Jzl"/>
+                            </connections>
+                        </button>
+                        <barButtonItem key="rightBarButtonItem" style="plain" id="Xzg-6t-r1Y">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="lrf-wU-ZLo">
+                                <rect key="frame" x="309" y="7" width="50" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="History"/>
+                                <connections>
+                                    <action selector="onHistory:" destination="n1D-TW-ydD" eventType="touchUpInside" id="cDU-yw-BFI"/>
+                                </connections>
+                            </button>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
+                </pageViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="t7o-vG-EBa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="985" y="1225"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Dx5-L7-dUv">
+            <objects>
+                <navigationController id="uEA-ZW-FFn" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="3dL-5O-Djo">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="n1D-TW-ydD" kind="relationship" relationship="rootViewController" id="IN0-CS-MSv"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="P3d-Qu-n0Y" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="84" y="1225"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="daimyoSample" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="UVg-20-9PW">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="7Rj-mj-nfh">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="40"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GdM-Ks-Ha0">
+                                                <rect key="frame" x="0.0" y="5" width="125" height="30"/>
+                                                <state key="normal" title="SpeedTest"/>
+                                                <connections>
+                                                    <action selector="onSpeedTest:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Riq-A0-Ltv"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7n2-V8-E1K">
+                                                <rect key="frame" x="125" y="5" width="125" height="30"/>
+                                                <state key="normal" title="DashBoard"/>
+                                                <connections>
+                                                    <action selector="onDashboard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nWB-qu-M39"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FMQ-XE-DpJ">
+                                                <rect key="frame" x="250" y="5" width="125" height="30"/>
+                                                <state key="normal" title="History"/>
+                                                <connections>
+                                                    <action selector="onHistory:" destination="BYZ-38-t0r" eventType="touchUpInside" id="A8A-Kv-ubt"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="Eh9-BX-HQG"/>
+                                        </constraints>
+                                    </stackView>
+                                    <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" pagingEnabled="YES" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tBG-MP-va8">
+                                        <rect key="frame" x="0.0" y="40" width="375" height="607"/>
+                                        <subviews>
+                                            <stackView contentMode="scaleToFill" ambiguous="YES" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="j2U-FJ-4Uu">
+                                                <rect key="frame" x="0.0" y="0.0" width="375" height="607"/>
+                                            </stackView>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="j2U-FJ-4Uu" secondAttribute="trailing" id="3I8-uX-nqK"/>
+                                            <constraint firstItem="j2U-FJ-4Uu" firstAttribute="leading" secondItem="tBG-MP-va8" secondAttribute="leading" id="6Me-mq-0jH"/>
+                                            <constraint firstItem="j2U-FJ-4Uu" firstAttribute="top" secondItem="tBG-MP-va8" secondAttribute="top" id="Wlk-TV-z3i"/>
+                                            <constraint firstAttribute="bottom" secondItem="j2U-FJ-4Uu" secondAttribute="bottom" id="eCd-Aq-oDG"/>
+                                            <constraint firstItem="j2U-FJ-4Uu" firstAttribute="height" secondItem="tBG-MP-va8" secondAttribute="height" id="in2-ZM-3Nc"/>
+                                        </constraints>
+                                    </scrollView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="7Rj-mj-nfh" firstAttribute="top" secondItem="UVg-20-9PW" secondAttribute="top" id="6ax-3G-Bz3"/>
+                                    <constraint firstItem="tBG-MP-va8" firstAttribute="width" secondItem="UVg-20-9PW" secondAttribute="width" id="DeO-lY-BJV"/>
+                                    <constraint firstItem="7Rj-mj-nfh" firstAttribute="leading" secondItem="UVg-20-9PW" secondAttribute="leading" id="LfM-LB-F20"/>
+                                    <constraint firstItem="7Rj-mj-nfh" firstAttribute="width" secondItem="UVg-20-9PW" secondAttribute="width" id="Veu-mf-arK"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="UVg-20-9PW" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="43P-0x-0Ye"/>
+                            <constraint firstItem="UVg-20-9PW" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="dvI-P0-cZh"/>
+                            <constraint firstItem="UVg-20-9PW" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="fb5-Hj-NZf"/>
+                            <constraint firstItem="UVg-20-9PW" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="sGL-5Z-2VT"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="scrollView" destination="tBG-MP-va8" id="S0G-Jb-cRQ"/>
+                        <outlet property="stackView" destination="j2U-FJ-4Uu" id="thA-M9-h6J"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>

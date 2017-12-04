@@ -33,11 +33,19 @@
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="左下" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LlD-Eg-UDy">
+                    <rect key="frame" x="0.0" y="646" width="35" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
             </subviews>
             <color key="backgroundColor" red="0.0" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
             <constraints>
+                <constraint firstItem="LlD-Eg-UDy" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="K2B-Mp-bR2"/>
                 <constraint firstItem="hKS-5k-nV8" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="Mb3-tg-eRe"/>
                 <constraint firstItem="hKS-5k-nV8" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="VLj-me-cnL"/>
+                <constraint firstItem="LlD-Eg-UDy" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" id="dcq-xK-e3I"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
         </view>

@@ -6,6 +6,7 @@ target 'daimyoSample' do
   use_frameworks!
 
   # Pods for daimyoSample
+  pod 'Realm', '~> 3.0'
 
   target 'daimyoSampleTests' do
     inherit! :search_paths

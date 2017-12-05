@@ -20,6 +20,7 @@
                             <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="RJb-dM-3wR">
                                 <rect key="frame" x="16" y="7" width="73" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <accessibility key="accessibilityConfiguration" identifier="speedTestButton"/>
                                 <state key="normal" title="SpeedTest"/>
                                 <connections>
                                     <action selector="onSpeedTest:" destination="n1D-TW-ydD" eventType="touchUpInside" id="WSJ-bp-qB8"/>
@@ -29,6 +30,7 @@
                         <button key="titleView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="79B-C2-YDI">
                             <rect key="frame" x="149.5" y="7" width="76" height="30"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <accessibility key="accessibilityConfiguration" identifier="dashBoardButton"/>
                             <state key="normal" title="DashBoard"/>
                             <connections>
                                 <action selector="onDashBoard:" destination="n1D-TW-ydD" eventType="touchUpInside" id="EjS-bY-Jzl"/>
@@ -38,6 +40,7 @@
                             <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="lrf-wU-ZLo">
                                 <rect key="frame" x="309" y="7" width="50" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <accessibility key="accessibilityConfiguration" identifier="historyBotton"/>
                                 <state key="normal" title="History"/>
                                 <connections>
                                     <action selector="onHistory:" destination="n1D-TW-ydD" eventType="touchUpInside" id="cDU-yw-BFI"/>

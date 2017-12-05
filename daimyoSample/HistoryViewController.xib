@@ -34,6 +34,9 @@
                 </label>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+            <accessibility key="accessibilityConfiguration" identifier="historyView">
+                <bool key="isElement" value="YES"/>
+            </accessibility>
             <constraints>
                 <constraint firstItem="IcU-84-MzV" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="Fcf-Ph-4BJ"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="leading" secondItem="1iu-kA-dlc" secondAttribute="leading" id="TWl-Rc-09y"/>

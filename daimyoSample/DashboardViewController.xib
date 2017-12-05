@@ -41,6 +41,9 @@
                 </label>
             </subviews>
             <color key="backgroundColor" red="0.54667245369999995" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+            <accessibility key="accessibilityConfiguration" identifier="dashBoardView">
+                <bool key="isElement" value="YES"/>
+            </accessibility>
             <constraints>
                 <constraint firstItem="FVd-kA-cer" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="0DG-Sd-Qve"/>
                 <constraint firstItem="n2E-eK-m5q" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="82W-52-JD7"/>

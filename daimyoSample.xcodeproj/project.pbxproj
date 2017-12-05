@@ -178,12 +178,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 068618871FD109A9005D95B7 /* Build configuration list for PBXNativeTarget "daimyoSampleTests" */;
 			buildPhases = (
-				F3696E1B23D2D3F0F7AB6D0A /* [CP] Check Pods Manifest.lock */,
 				0686186C1FD109A9005D95B7 /* Sources */,
 				0686186D1FD109A9005D95B7 /* Frameworks */,
 				0686186E1FD109A9005D95B7 /* Resources */,
-				4800CC4C11B84C5E9F2F8920 /* [CP] Embed Pods Frameworks */,
-				D73B32A74869135C61573379 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -199,12 +196,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0686188A1FD109A9005D95B7 /* Build configuration list for PBXNativeTarget "daimyoSampleUITests" */;
 			buildPhases = (
-				F7769E772B2D9AFB585E73F1 /* [CP] Check Pods Manifest.lock */,
 				068618771FD109A9005D95B7 /* Sources */,
 				068618781FD109A9005D95B7 /* Frameworks */,
 				068618791FD109A9005D95B7 /* Resources */,
-				52CEC3971F1EEF83F63815B0 /* [CP] Embed Pods Frameworks */,
-				D931D56399F1AB6C500532FA /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -291,105 +285,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		4800CC4C11B84C5E9F2F8920 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-daimyoSampleTests/Pods-daimyoSampleTests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		52CEC3971F1EEF83F63815B0 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-daimyoSampleUITests/Pods-daimyoSampleUITests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		D73B32A74869135C61573379 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-daimyoSampleTests/Pods-daimyoSampleTests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		D931D56399F1AB6C500532FA /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-daimyoSampleUITests/Pods-daimyoSampleUITests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		F3696E1B23D2D3F0F7AB6D0A /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-daimyoSampleTests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		F7769E772B2D9AFB585E73F1 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-daimyoSampleUITests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		068618581FD109A9005D95B7 /* Sources */ = {
@@ -568,7 +463,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = PWBJK4SLE8;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = daimyoSample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = jp.co.ikaika.daimyoSample;
@@ -583,7 +478,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = PWBJK4SLE8;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = daimyoSample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = jp.co.ikaika.daimyoSample;

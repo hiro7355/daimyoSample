@@ -31,6 +31,35 @@ class daimyoSampleUITests: XCTestCase {
     func testExample() {
         // Use recording to get started writing UI tests.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
+        
+
+        
+        let app = XCUIApplication()
+        let dashboardNavigationBar = app.navigationBars["DashBoard"]
+        let dashboardbuttonButton = dashboardNavigationBar/*@START_MENU_TOKEN@*/.buttons["dashBoardButton"]/*[[".buttons[\"DashBoard\"]",".buttons[\"dashBoardButton\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/
+        dashboardbuttonButton.tap()
+        
+        let historybottonButton = dashboardNavigationBar/*@START_MENU_TOKEN@*/.buttons["historyBotton"]/*[[".buttons[\"History\"]",".buttons[\"historyBotton\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/
+        historybottonButton.tap()
+        
+        let speedtestbuttonButton = dashboardNavigationBar/*@START_MENU_TOKEN@*/.buttons["speedTestButton"]/*[[".buttons[\"SpeedTest\"]",".buttons[\"speedTestButton\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/
+        speedtestbuttonButton.tap()
+        
+        let speedtestviewElement = app.otherElements["speedTestView"]
+        speedtestviewElement.swipeLeft()
+        app.otherElements["dashBoardView"].swipeLeft()
+        
+        let historyviewElement = app.otherElements["historyView"]
+        historyviewElement.swipeLeft()
+        historyviewElement.swipeRight()
+//        speedtestviewElement.swipeRight()
+  //      speedtestviewElement.swipeRight()
+        dashboardbuttonButton.tap()
+        speedtestbuttonButton.tap()
+        historybottonButton.tap()
+        
+   //     XCTAssertTrue(speedtestviewElement.isEnabled)
+
     }
     
 }

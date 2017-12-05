@@ -6,7 +6,8 @@ target 'daimyoSample' do
   use_frameworks!
 
   # Pods for daimyoSample
-  pod 'Realm', '~> 3.0'
+  pod 'RealmSwift', '~> 3.0'
+  pod 'GaugeView', :git => 'https://github.com/BelkaLab/GaugeView'
 
   target 'daimyoSampleTests' do
     inherit! :search_paths

@@ -21,6 +21,9 @@
 		068618971FD148F2005D95B7 /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 068618951FD148F2005D95B7 /* HistoryViewController.swift */; };
 		068618981FD148F2005D95B7 /* HistoryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 068618961FD148F2005D95B7 /* HistoryViewController.xib */; };
 		0686189A1FD4CDCF005D95B7 /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 068618991FD4CDCF005D95B7 /* PageViewController.swift */; };
+		06C013661FD6AB8B0017E315 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06C013651FD6AB8B0017E315 /* TabBarViewController.swift */; };
+		06C013691FD6B2BF0017E315 /* History.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06C013681FD6B2BF0017E315 /* History.swift */; };
+		06C0136B1FD6B9470017E315 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06C0136A1FD6B9470017E315 /* DataManager.swift */; };
 		074C7354ACC9CE6F8759B6AF /* Pods_daimyoSample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF3D299B4AEDC8A904B0E1CD /* Pods_daimyoSample.framework */; };
 		2C9B0AEF7FFF859AF8602775 /* Pods_daimyoSampleTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55F246F74EC9A59806968015 /* Pods_daimyoSampleTests.framework */; };
 		BFB3613717B1FB4ACF32F4BD /* Pods_daimyoSampleUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98F73C7E30BD268A5DB892EA /* Pods_daimyoSampleUITests.framework */; };
@@ -65,6 +68,9 @@
 		068618951FD148F2005D95B7 /* HistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
 		068618961FD148F2005D95B7 /* HistoryViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HistoryViewController.xib; sourceTree = "<group>"; };
 		068618991FD4CDCF005D95B7 /* PageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
+		06C013651FD6AB8B0017E315 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
+		06C013681FD6B2BF0017E315 /* History.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = History.swift; sourceTree = "<group>"; };
+		06C0136A1FD6B9470017E315 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 		300AF68C36E8488CEB01E1EF /* Pods-daimyoSampleUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-daimyoSampleUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-daimyoSampleUITests/Pods-daimyoSampleUITests.release.xcconfig"; sourceTree = "<group>"; };
 		4F5A60D80578EEC35EB779E4 /* Pods-daimyoSample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-daimyoSample.release.xcconfig"; path = "Pods/Target Support Files/Pods-daimyoSample/Pods-daimyoSample.release.xcconfig"; sourceTree = "<group>"; };
 		55F246F74EC9A59806968015 /* Pods_daimyoSampleTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_daimyoSampleTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -128,6 +134,7 @@
 		0686185E1FD109A9005D95B7 /* daimyoSample */ = {
 			isa = PBXGroup;
 			children = (
+				06C013671FD6B26D0017E315 /* models */,
 				0686185F1FD109A9005D95B7 /* AppDelegate.swift */,
 				068618611FD109A9005D95B7 /* ViewController.swift */,
 				068618631FD109A9005D95B7 /* Main.storyboard */,
@@ -141,6 +148,7 @@
 				068618951FD148F2005D95B7 /* HistoryViewController.swift */,
 				068618961FD148F2005D95B7 /* HistoryViewController.xib */,
 				068618991FD4CDCF005D95B7 /* PageViewController.swift */,
+				06C013651FD6AB8B0017E315 /* TabBarViewController.swift */,
 			);
 			path = daimyoSample;
 			sourceTree = "<group>";
@@ -161,6 +169,15 @@
 				068618811FD109A9005D95B7 /* Info.plist */,
 			);
 			path = daimyoSampleUITests;
+			sourceTree = "<group>";
+		};
+		06C013671FD6B26D0017E315 /* models */ = {
+			isa = PBXGroup;
+			children = (
+				06C013681FD6B2BF0017E315 /* History.swift */,
+				06C0136A1FD6B9470017E315 /* DataManager.swift */,
+			);
+			path = models;
 			sourceTree = "<group>";
 		};
 		DECDB9D124DCD3BB2D3D9075 /* Pods */ = {
@@ -434,11 +451,15 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-daimyoSample/Pods-daimyoSample-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GaugeView/GaugeView.framework",
 				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
+				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GaugeView.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -484,9 +505,12 @@
 			files = (
 				068618621FD109A9005D95B7 /* ViewController.swift in Sources */,
 				0686188F1FD148A9005D95B7 /* SpeedTestViewController.swift in Sources */,
+				06C013691FD6B2BF0017E315 /* History.swift in Sources */,
 				068618601FD109A9005D95B7 /* AppDelegate.swift in Sources */,
 				0686189A1FD4CDCF005D95B7 /* PageViewController.swift in Sources */,
+				06C013661FD6AB8B0017E315 /* TabBarViewController.swift in Sources */,
 				068618971FD148F2005D95B7 /* HistoryViewController.swift in Sources */,
+				06C0136B1FD6B9470017E315 /* DataManager.swift in Sources */,
 				068618931FD148D0005D95B7 /* DashboardViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
